@@ -1,0 +1,34 @@
+[color]
+	ui = true
+[alias]
+	br = branch --all
+	fixb = checkout -B _fix
+	co = checkout
+	c = commit -c HEAD
+	cc = !$HOME/.scripts/git/commit-progress-use-current-branch
+	st=status
+	sts=status -s .
+	stu=status -unos
+	d = diff HEAD
+	ds = diff --name-status
+	dd = diff --cached HEAD
+	dc = diff --cached
+	tree = log --decorate --graph --abbrev-commit --oneline
+	forest  = log --decorate --graph --abbrev-commit --oneline --all
+	f = !git forest
+	sprout = !$HOME/.scripts/git/sprout
+	ap=add -p
+	au=add -u
+	cv = commit --verbose
+	l = log --decorate --graph
+	q =!sh -c 'git f -n 50 && git st'
+
+[user]
+	name = Alex Paz
+	email = alexander.j.paz@ngc.com
+[push]
+	default = simple
+[core]
+	editor = vim
+[credential]
+	helper = cache

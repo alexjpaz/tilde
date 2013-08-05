@@ -1,0 +1,12 @@
+####
+# git sprout
+# ---
+# Gets commit ahead of tracking branch
+# 
+###
+# Get tracking branch
+#
+TRACKING_BRANCH=$(git rev-parse --abbrev-ref --symbolic-full-name @{u})
+
+git tree HEAD...${TRACKING_BRANCH}
+

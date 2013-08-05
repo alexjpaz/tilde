@@ -1,0 +1,7 @@
+#!/bin/sh
+MAIL=$(mktemp)
+MAILTO="apaz+test@localhost"
+
+echo 'testing hourly' &> $MAIL
+
+sendmail $MAILTO < $MAIL
