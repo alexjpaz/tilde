@@ -1,0 +1,8 @@
+*.swp
+*.pyc
+.pydevproject
+.classpath
+.project
+.settings/
+.venv/
+target/
