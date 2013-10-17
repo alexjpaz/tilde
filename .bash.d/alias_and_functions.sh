@@ -4,6 +4,7 @@ alias cbf='cd $NGA_HOME'
 alias q="fab -c /home/apaz/.scripts/q/.fabricrc"
 alias gr='_gr'
 alias gcd="_gcd"
+alias cpd="cp -t $HOME/Desktop/"
 
 function _svngrep() {
 	grep --exclude-dir=".svn" -r "$@" .
@@ -19,6 +20,10 @@ function _gcd() {
 
 function ___script() {
 	. ~/.scripts/$1/$2 $3 $4 $5 $6 $7 $8 $9
+}
+
+function _hlgrep() {
+	grep --color -E "${1}|$"
 }
 
 #  apaz 

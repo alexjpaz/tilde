@@ -30,5 +30,8 @@
 	default = simple
 [core]
 	editor = vim
+	excludesfile = ~/.gitglobalignore
 [credential]
 	helper = cache
+[diff]
+	guitool = meld
