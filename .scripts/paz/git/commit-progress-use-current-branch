@@ -1,0 +1,13 @@
+#/bin/sh
+
+CURRENT_BRANCH=$(git symbolic-ref --short -q HEAD)
+
+MESSAGE="squash! $CURRENT_BRANCH - "
+
+TMPFILE=$(mktemp)
+
+echo $MESSAGE &> $TMPFILE
+
+git commit -t $TMPFILE
+
+rm $TMPFILE
