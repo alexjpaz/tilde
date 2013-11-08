@@ -5,6 +5,7 @@ alias q="fab -c /home/apaz/.scripts/q/.fabricrc"
 alias gr='_gr'
 alias gcd="_gcd"
 alias cpd="cp -t $HOME/Desktop/"
+alias mci='mvn clean install -Dmaven.test.skip=true'
 
 function _svngrep() {
 	grep --exclude-dir=".svn" -r "$@" .
