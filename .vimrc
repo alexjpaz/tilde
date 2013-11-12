@@ -1,6 +1,9 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
+set ts=4
+set sw=4
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
