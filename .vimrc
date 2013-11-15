@@ -10,5 +10,6 @@ call vundle#rc()
 Bundle 'puppetlabs/puppet-syntax-vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'flazz/vim-colorschemes'
+Bundle 'scrooloose/nerdtree'
 
 filetype plugin indent on
