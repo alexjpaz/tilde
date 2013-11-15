@@ -6,3 +6,4 @@
 .settings/
 .venv/
 target/
+target-ide/
