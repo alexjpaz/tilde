@@ -1,6 +1,11 @@
+"colorscheme sift 
+colorscheme desert
+"colorscheme darkzen
+"colorscheme darkrobot
+"colorscheme lucious
+
 set guifont=Profont
 set guioptions-=T  "remove toolbar"
-colorscheme sift 
 
 function! ToggleGUICruft()
   if &guioptions=='i'
