@@ -14,6 +14,7 @@
 	ds = diff --name-status
 	dd = diff --cached HEAD
 	dc = diff --cached
+	dn = diff HEAD --name-status
 	tree = log --decorate --graph --abbrev-commit --oneline
 	forest  = log --decorate --graph --abbrev-commit --oneline --all
 	f = !git forest

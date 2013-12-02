@@ -2,7 +2,7 @@
 "colorscheme desert
 "colorscheme darkzen
 "colorscheme darkrobot
-colorscheme lucios
+colorscheme lucius
 
 set guifont=Profont
 set guioptions-=T  "remove toolbar"
