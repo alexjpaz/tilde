@@ -1,4 +1,5 @@
 # User specific aliases and functions
+alias ls='ls --color=auto'
 alias paz="fab -c /home/apaz/.scripts/paz/.fabricrc"
 alias cpd="cp -t $HOME/Desktop/"
 alias mci='mvn clean install -Dmaven.test.skip=true'
