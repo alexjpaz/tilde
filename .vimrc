@@ -11,5 +11,6 @@ Bundle 'puppetlabs/puppet-syntax-vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-fugitive'
 
 filetype plugin indent on
