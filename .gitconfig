@@ -11,6 +11,7 @@
 	sts=status -s .
 	stu=status -unos
 	d = diff HEAD
+	dw = diff --ignore-all-space HEAD
 	ds = diff --name-status
 	dd = diff --cached HEAD
 	dc = diff --cached
@@ -23,6 +24,7 @@
 	au=add -u
 	cv = commit --verbose
 	l = log --decorate --graph
+	lp = log --decorate --graph --patch --ignore-all-space
 	q =!sh -c 'git f -n 50 && git st'
 
 [user]
