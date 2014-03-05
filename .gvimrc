@@ -4,7 +4,6 @@
 "colorscheme darkrobot
 colorscheme lucius
 
-set guifont=Profont
 set guioptions-=T  "remove toolbar"
 
 function! ToggleGUICruft()
