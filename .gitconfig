@@ -7,9 +7,9 @@
 	co = checkout
 	c = commit -c HEAD
 	cc = !$HOME/.scripts/git/commit-progress-use-current-branch
+	ca = commit --amend
 	st=status
 	sts=status -s .
-	stu=status -unos
 	d = diff HEAD
 	dw = diff --ignore-all-space HEAD
 	ds = diff --name-status
