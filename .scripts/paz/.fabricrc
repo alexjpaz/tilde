@@ -1,1 +1,1 @@
-fabfile = /home/apaz/.scripts/paz/fabric/fabfile.py
+fabfile = /home/apaz/.scripts/paz/fabric/__init__.py

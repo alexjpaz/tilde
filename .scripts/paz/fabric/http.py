@@ -1,8 +1,10 @@
+from fabric.api import run, task, execute
+
 import sys
 import BaseHTTPServer
 from SimpleHTTPServer import SimpleHTTPRequestHandler
 
-
+@task(default=True)
 def start():
 	HandlerClass = SimpleHTTPRequestHandler
 	ServerClass  = BaseHTTPServer.HTTPServer
