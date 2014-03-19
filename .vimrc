@@ -13,5 +13,6 @@ Bundle 'flazz/vim-colorschemes'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
+Bundle 'pangloss/vim-javascript'
 
 filetype plugin indent on
