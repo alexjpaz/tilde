@@ -26,6 +26,7 @@
 	l = log --decorate --graph
 	lp = log --decorate --graph --patch --ignore-all-space
 	q =!sh -c 'git f -n 50 && git st'
+	zip = archive --format zip --output
 
 [user]
 	name = Alex Paz
