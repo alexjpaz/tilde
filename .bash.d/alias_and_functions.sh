@@ -3,6 +3,7 @@ alias ls='ls --color=auto'
 alias paz="fab -c /home/apaz/.scripts/paz/.fabricrc"
 alias cpd="cp -t $HOME/Desktop/"
 alias mci='mvn clean install -Dmaven.test.skip=true'
+alias _vim='vim -u NONE -N'
 
 alias "svn-grep"='grep --exclude-dir=".svn" -r . -e'
 
