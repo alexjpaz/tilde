@@ -10,6 +10,7 @@
 	ca = commit --amend
 	st=status
 	sts=status -s .
+	stu=status --untracked-files=no
 	d = diff HEAD
 	dw = diff --ignore-all-space HEAD
 	ds = diff --name-status
