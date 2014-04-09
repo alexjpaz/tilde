@@ -23,7 +23,7 @@
 	sprout = !$HOME/.scripts/git/sprout
 	ap=add -p
 	au=add -u
-	cv = commit --verbose
+	cv = commit --verbose --untracked-files=no
 	l = log --decorate --graph
 	lp = log --decorate --graph --patch --ignore-all-space
 	q =!sh -c 'git f -n 50 && git st'
