@@ -10,6 +10,7 @@
 	ca = commit --amend
 	st=status
 	sts=status -s .
+	stu=status --untracked-files=no
 	d = diff HEAD
 	dw = diff --ignore-all-space HEAD
 	ds = diff --name-status
@@ -22,10 +23,11 @@
 	sprout = !$HOME/.scripts/git/sprout
 	ap=add -p
 	au=add -u
-	cv = commit --verbose
+	cv = commit --verbose --untracked-files=no
 	l = log --decorate --graph
 	lp = log --decorate --graph --patch --ignore-all-space
 	q =!sh -c 'git f -n 50 && git st'
+	zip = archive --format zip --output
 
 [user]
 	name = Alex Paz

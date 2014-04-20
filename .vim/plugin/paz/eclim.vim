@@ -1,6 +1,8 @@
 nmap <Leader>es <ESC>:JavaSearchContext<Return>
 nmap <Leader>et <ESC>:JUnit<Return>
 
+imap <C-Space> <C-x><C-u>
+
 function! TabMessage(cmd)
   redir => message
   silent execute a:cmd
