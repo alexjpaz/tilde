@@ -14,5 +14,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'pangloss/vim-javascript'
+Bundle 'gcmt/taboo.vim'
+" run :PluginInstall
 
 filetype plugin indent on
