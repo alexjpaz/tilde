@@ -29,6 +29,7 @@
 	q =!sh -c 'git f -n 50 && git st'
 	zip = archive --format zip --output
 	rh = !$HOME/.scripts/git/reset-hard
+	vimp = !sh -c 'vim -p `git diff --name-only`'
 
 [user]
 	name = Alex Paz
