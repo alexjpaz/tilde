@@ -18,6 +18,7 @@ nmap <Leader>0 "0p
 
 " Perform default macro on visually selected lines
 vmap <Leader>q :normal @q<Return>
+nmap <Leader>q :normal @q<Return>
 
 noremap <C-s> <ESC>:w!<Return>
 inoremap <C-s> <ESC>:w!<Return>
