@@ -30,7 +30,7 @@
 	zip = archive --format zip --output
 	rh = !$HOME/.scripts/git/reset-hard
 	vimp = !sh -c 'vim -p `git diff --name-only`'
-	sandbox = !HOME/.scripts/git/add-sandbox-remote
+	sandbox = !$HOME/.scripts/git/add-sandbox-remote
 
 [user]
 	name = Alex Paz

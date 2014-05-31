@@ -1,4 +1,11 @@
-REMOTE=backup
 REMOTE_BRANCH=$1
+REMOTE=backup
 GIT_URL=https://alexjpaz@bitbucket.org/alexjpaz/sandbox.git
+
+if [ -z $REMOTE_BRANCH ]; then
+    echo "Please specify a branch name"
+	exit 127
+fi
+
 git remote add -t $REMOTE_BRANCH $REMOTE $GIT_URL
+git branch $REMOTE_BRANCH
