@@ -1,0 +1,4 @@
+REMOTE=backup
+REMOTE_BRANCH=$1
+GIT_URL=https://alexjpaz@bitbucket.org/alexjpaz/sandbox.git
+git remote add -t $REMOTE_BRANCH $REMOTE $GIT_URL
