@@ -54,3 +54,5 @@ nnoremap <C-k5> :NERDTreeToggle .<CR>
 nnoremap <C-k7> :set rnu!<CR>
 nnoremap <C-k8> :set nu!<CR>
 
+" replace all word
+nmap <Leader>r "ryiw<ESC>:%s/<C-R>r//gc<left><left><left>
