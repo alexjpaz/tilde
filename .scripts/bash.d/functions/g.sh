@@ -4,6 +4,11 @@ BOOKMARK_DIR=$HOME/.pazconf/bookmarks
 function g() {
 	BOOKMARK=$1
 
+	if [ -z $BOOKMARK ]; then
+		find $BOOKMARK_DIR -type f -perm -u=r | sed "s@$BOOKMARK_DIR/@@"
+		return;
+	fi
+
 	pushd $(cat ${BOOKMARK_DIR}/$BOOKMARK)
 }
 

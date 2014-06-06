@@ -31,3 +31,72 @@ Pictures/
 VirtualBox VMs/
 oradiag_apaz/
 workspace/
+.ApacheDirectoryStudio/
+.FBReader/
+.NERDTreeBookmarks
+.appcfg_cookies
+.appcfg_nag
+.appcfg_oauth2_tokens
+.bash_profile
+.claws-mail/
+.config/
+.cron.d/logs/all.log
+.eclim/
+.fabricrc
+.gimp-2.8/
+.gnome2/
+.gradle/
+.gtk-bookmarks
+.ireport/
+.local/bin/
+.local/share/.converted-launchers
+.local/share/Trash/
+.local/share/applications/
+.local/share/desktop-directories/
+.local/share/evolution/
+.local/share/folks/
+.local/share/gegl-0.2/
+.local/share/gnome-do/
+.local/share/gnome-settings-daemon/
+.local/share/gnome-shell/
+.local/share/grilo-plugins/
+.local/share/gsettings-data-convert
+.local/share/gvfs-metadata/
+.local/share/icc/
+.local/share/icons/
+.local/share/keyrings/
+.local/share/libgda/
+.local/share/meld/
+.local/share/mime/
+.local/share/recently-used.xbel
+.local/share/shotwell/
+.local/share/telepathy/
+.local/share/tracker/
+.local/share/webkit/
+.netbeans/
+.npm/
+.npmrc
+.opt/
+.pazconf/
+.pip/
+.poedit/
+.puppet/modules/apt/
+.puppet/modules/mongodb/
+.puppet/modules/stdlib/
+.puppet/var/
+.qws/
+.themes/
+#	.vim/.netrwhist
+#	.vim/after/
+#	.vim/bundle/
+#	.vim/eclim/
+#	.viminfo.tmp
+#	.vimrc.orig
+Documents/
+Mail/
+Vagrantfile
+bin/
+mkdir
+tmp/
+workbench.xmi
+no changes added to commit (use "git add" and/or "git commit -a")
