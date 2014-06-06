@@ -23,3 +23,5 @@ function _hlgrep() {
 function apaz-prompt-mini() {
 	PS1="\[$(tput setaf 5)\]\\$ \[$(tput sgr0)\]"
 }
+
+

@@ -6,13 +6,8 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # Source .bash.d
-BASHDIR=~/.bash.d/
-for script in $BASHDIR/*.sh
-do
-	if [ -x $script ]; then
-		. $script
-	fi
-done
+export PAZENV="$HOSTNAME"
+source $HOME/.scripts/init.d/bashrc.sh
 
 export PATH=$PATH:$HOME/.opt/google_appengine/
 

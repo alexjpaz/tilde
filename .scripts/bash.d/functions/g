@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+function g() {
+	echo "lol"
+}
+
+__g()
+{
+  cur=${COMP_WORDS[COMP_CWORD]}
+  case "${cur}" in
+    d*) use="doSomething" ;;
+    n*) use="nowDoSomethingElse" ;;
+  esac
+  COMPREPLY=( $( compgen -W "$use" -- $cur ) )
+}
+complete -o default -o nospace -F __g  g
+
+# vim:syntax=sh
