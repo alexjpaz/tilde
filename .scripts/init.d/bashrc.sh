@@ -10,4 +10,5 @@ function source_dem_files() {
 }
 
 source_dem_files "$HOME/.bash.d/"
+source_dem_files "$HOME/.scripts/env.d/global/bash.d/"
 source_dem_files "$HOME/.scripts/env.d/${PAZENV}/bash.d/"
