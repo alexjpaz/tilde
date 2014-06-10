@@ -1,8 +1,3 @@
-"colorscheme sift 
-"colorscheme desert
-"colorscheme darkzen
-"colorscheme darkrobot
-colorscheme lucius
 
 set guioptions-=T  "remove toolbar"
 
