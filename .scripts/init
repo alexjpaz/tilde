@@ -1,4 +1,4 @@
-#
+# wget https://raw.githubusercontent.com/alexjpaz/tilde/master/.scripts/init -O - | sh
 cd $HOME
 git init
 git remote add tilde https://github.com/alexjpaz/tilde.git
