@@ -1,6 +1,8 @@
 # apply dconf/gsettings
 setcmd="gsettings set org.mate.terminal.profile:/org/mate/terminal/profiles/default/"
 
+${setcmd} default-show-menubar false
+${setcmd} scrollbar-position 'hidden'
 ${setcmd} font 'Monospace 8'
 ${setcmd} background-color '#000000000000'
 ${setcmd} foreground-color '#FFFFFFFFFFFF'
