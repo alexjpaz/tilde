@@ -11,7 +11,10 @@ noremap <A-5> 5gt<Return>
 
 " Paste from OS clipboard
 nmap <Leader>p "+p
+
+" Yank to OS Clipboard
 nmap <Leader>y "+y
+vmap <Leader>y "+y
 
 " Paste from yank clipboard
 nmap <Leader>0 "0p
