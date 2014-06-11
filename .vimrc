@@ -15,6 +15,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'pangloss/vim-javascript'
 Bundle 'gcmt/taboo.vim'
+Bundle "lepture/vim-velocity"
 
 "SnipMate
 Bundle "MarcWeber/vim-addon-mw-utils"
