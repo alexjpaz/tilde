@@ -4,7 +4,7 @@ filetype off                   " required!
 set ts=4
 set sw=4
 
-set rtp+=~/.vim/bundle/vundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
