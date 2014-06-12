@@ -4,24 +4,28 @@ filetype off                   " required!
 set ts=4
 set sw=4
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/vundle/Vundle.vim
 
-Bundle 'puppetlabs/puppet-syntax-vim'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'flazz/vim-colorschemes'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-surround'
-Bundle 'pangloss/vim-javascript'
-Bundle 'gcmt/taboo.vim'
-Bundle "lepture/vim-velocity"
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'puppetlabs/puppet-syntax-vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'pangloss/vim-javascript'
+Plugin 'gcmt/taboo.vim'
+Plugin "lepture/vim-velocity"
 
 "SnipMate
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
-Bundle "honza/vim-snippets"
+Plugin "MarcWeber/vim-addon-mw-utils"
+Plugin "tomtom/tlib_vim"
+Plugin "garbas/vim-snipmate"
+Plugin "honza/vim-snippets"
+
+call vundle#end()
 " run :PluginInstall
 
 filetype plugin indent on
