@@ -17,13 +17,13 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'pangloss/vim-javascript'
 Plugin 'gcmt/taboo.vim'
-Plugin "lepture/vim-velocity"
+Plugin 'lepture/vim-velocity'
 
 "SnipMate
-Plugin "MarcWeber/vim-addon-mw-utils"
-Plugin "tomtom/tlib_vim"
-Plugin "garbas/vim-snipmate"
-Plugin "honza/vim-snippets"
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
 
 call vundle#end()
 " run :PluginInstall
