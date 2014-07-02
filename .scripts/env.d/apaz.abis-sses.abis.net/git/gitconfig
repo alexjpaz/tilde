@@ -1,2 +1,2 @@
-[alias]
-	abis = 'derp'
+[include]
+	    path = ~/.scripts/env.d/global/git/gitconfig

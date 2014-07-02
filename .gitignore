@@ -1,3 +1,5 @@
+.gitconfig
+.scripts/env.d/current
 .ICEauthority
 .VirtualBox/
 .bash_history

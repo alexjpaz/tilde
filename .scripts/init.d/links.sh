@@ -1,4 +1,6 @@
 echo "=== $0 ==="
 
-ln -sf 
-echo "${PAZENV:-${HOSTNAME}}"
+ENV="${HOME}/.scripts/env.d/${PAZENV:-${HOSTNAME}}"
+
+ln -sf "${ENV}/git/gitconfig" "${HOME}/.gitconfig"
+ln -sf "${ENV}" "${HOME}/.scripts/env.d/current"
