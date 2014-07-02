@@ -16,8 +16,12 @@ nmap <Leader>p "+p
 nmap <Leader>y "+y
 vmap <Leader>y "+y
 
+" Swap line 
+nmap <Leader>ss "sddk"0p"0:let @0=@s<CR>
+nmap <Leader>siw "sdiw<ESC>h"0p"0:let @0=@s<CR>
+
 " Paste from yank clipboard
-nmap <Leader>0 "0p
+vmap <Leader>q :normal @q<Return>
 
 " Perform default macro on visually selected lines
 vmap <Leader>q :normal @q<Return>
