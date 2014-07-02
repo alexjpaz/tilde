@@ -1,3 +1,4 @@
+echo "=== $0 ==="
 # apply dconf/gsettings
 setcmd="gsettings set org.mate.terminal.profile:/org/mate/terminal/profiles/default/"
 

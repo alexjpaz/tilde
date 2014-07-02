@@ -1,4 +1,4 @@
-echo "Running 'vundle'"
+echo "=== $0 ==="
 
 VUNDLE_DIR=$HOME/.vim/bundle/Vundle.vim
 
