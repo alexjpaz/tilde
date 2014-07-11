@@ -1,6 +1,6 @@
-*.swp$
-*.swn$
-*.swo$
+*.swp
+*.swn
+*.swo
 *.pyc
 .pydevproject
 .classpath
