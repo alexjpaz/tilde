@@ -18,6 +18,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'pangloss/vim-javascript'
 Plugin 'gcmt/taboo.vim'
 Plugin 'lepture/vim-velocity'
+Plugin 'groenewege/vim-less'
 
 "SnipMate
 Plugin 'MarcWeber/vim-addon-mw-utils'
