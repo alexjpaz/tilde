@@ -1,0 +1,1 @@
+find -regex '^\..*sw[pon]$' | xargs rm -v
