@@ -1,5 +1,11 @@
 function source_dem_files() {
 	BASHDIR=$1
+
+	if [ ! -d "${BASHDIR}" ]; then
+		return;
+	fi
+
+
 	SCRIPTS=$(find $BASHDIR -iname '*.sh' -perm -u=x | sort)
 	for script in $SCRIPTS
 	do
@@ -10,4 +16,4 @@ function source_dem_files() {
 }
 
 source_dem_files "$HOME/.scripts/env.d/global/bash.d/"
-source_dem_files "$HOME/.scripts/env.d/${PAZENV:-${HOSTNAME}}/bash.d/"
+source_dem_files "$HOME/.scripts/env.d/current/bash.d/"
