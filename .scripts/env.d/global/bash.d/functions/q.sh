@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
-SCRIPT_DIR=$HOME/.scripts/env.d/${PAZENV}/q.scripts
+SCRIPT_DIR="$HOME/.scripts/env.d/global/q.scripts"
+
+if [ -d $HOME/.scripts/env.d/${PAZENV:-${HOSTNAME}}/q.scripts ]; then
+	SCRIPT_DIR+=" $HOME/.scripts/env.d/${PAZENV:-${HOSTNAME}}/q.scripts"
+fi
 
 function q() {
 	SCRIPT=$1
