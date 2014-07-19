@@ -12,6 +12,7 @@ SCRIPTS=$(find ${INIT_DIR} -iname '*.sh' -perm -u=x | sort)
 for script in $SCRIPTS
 do
 	if [ -x $script ]; then
+		echo "Sourcing ${script}"
 		. $script
 	fi
 done
