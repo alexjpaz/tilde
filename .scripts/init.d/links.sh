@@ -10,7 +10,7 @@ function paz_init_makeLink() {
 	SOURCE=${ENV}${1}
 	TARGET=${2}
 
-	if [ ! -f "${SOURCE}" ]; then
+	if [ ! -e "${SOURCE}" ]; then
 		SOURCE=${GLOBALENV}${1}
 	fi
 
