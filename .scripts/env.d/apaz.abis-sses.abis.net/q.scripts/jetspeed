@@ -1,1 +1,5 @@
+rm -rf /opt/jetspeed/logs/*
+rm -rf /opt/jetspeed/ABISPortlet/*
 /opt/jetspeed/bin/catalina.sh run
+
+
