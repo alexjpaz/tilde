@@ -1,0 +1,3 @@
+#!/bin/bash
+git clone apaz@alexjpaz.com:workspace/autowares/att-services.git
+git clone apaz@alexjpaz.com:workspace/autowares/vehimatics.git
