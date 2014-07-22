@@ -1,13 +1,15 @@
 #!/bin/bash
+
 git init att-services
-cd att-services
+pushd att-services
 git remote add origin apaz@alexjpaz.com:workspace/autowares/att-services.git
 git remote add deploy apaz@alexjpaz.com:workspace/autowares/att-services.deploy
 git fetch --all
 
+popd
 
 git init vehimatics
-cd vehimatics
+pushd vehimatics
 git remote add origin apaz@alexjpaz.com:workspace/autowares/vehimatics.git
 git remote add deploy apaz@alexjpaz.com:workspace/autowares/vehimatics.deploy
 git fetch --all
