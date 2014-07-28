@@ -20,6 +20,8 @@
        tree = log --decorate --graph --abbrev-commit --oneline
        forest  = log --decorate --graph --abbrev-commit --oneline --all
        f = !git forest
+	   t = !git tree
+	   fall = fetch --all
        sprout = !$HOME/.scripts/git/sprout
        ap=add -p
        au=add -u
