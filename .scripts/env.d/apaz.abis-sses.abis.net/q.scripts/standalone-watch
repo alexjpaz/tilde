@@ -1,0 +1,74 @@
+#!/bin/bash
+BUILD=/build/cbf.git
+BUILD_PORTLETS=${BUILD}/portal/portlets/src/main/webapp
+
+WEBAPPS=/home/apaz/.opt/portal/tomcat/webapps/
+
+ACTIVE=1
+
+THREADS=
+
+function pluto_wro() {
+	JOB="pluto_wro"
+	while true; do
+		echo "(${JOB}) ---> compiling"
+		mvn compile -f ${BUILD}/portal/pluto/pom.xml 1> /dev/null
+
+		echo "(${JOB}) ---> rsync"
+		rsync -avPi /build/cbf.git/portal/pluto/target/portal-pluto/wro/ ${WEBAPPS}/pluto/wro/ 1> /dev/null
+	done
+}
+
+function pluto_assets() {
+	JOB="pluto_assets"
+	while true; do
+		echo "(${JOB}) ---> rsync"
+		rsync -avPi /build/cbf.git/portal/pluto/src/main/webapp/assets/ ${WEBAPPS}/pluto/assets/ 1> /dev/null
+		sleep 1
+	done
+}
+
+function portlets_assets() {
+	JOB="portlets_assets"
+
+	while true; do
+		echo "(${JOB}) ---> rsync"
+		rsync -avPi ${BUILD_PORTLETS}/assets/ ${WEBAPPS}/ABISPortlet/assets/  1> /dev/null
+		rsync -avPi ${BUILD_PORTLETS}/*.html ${WEBAPPS}/ABISPortlet/ 1> /dev/null
+		rsync -avPi ${BUILD_PORTLETS}/script/ ${WEBAPPS}/ABISPortlet/script/ 1> /dev/null
+		rsync -avPi ${BUILD_PORTLETS}/WEB-INF/view/ ${WEBAPPS}/ABISPortlet/WEB-INF/view/ 1> /dev/null
+		rsync -avPi ${BUILD_PORTLETS}/WEB-INF/tags/ ${WEBAPPS}/ABISPortlet/WEB-INF/tags/ 1> /dev/null
+		sleep 1
+	done
+}
+
+function portlets_wro() {
+	JOB="portlets_wro"
+
+	while true; do
+		echo "(${JOB}) ---> compiling"
+		mvn wro4j:run -f ${BUILD}/portal/portlets/pom.xml 1> /dev/null
+	done
+}
+
+function worker() {
+	$1 &
+	THREADS="${THREADS} $!"
+	echo "Starting job: $1 $!"
+}
+
+function shutdown() {
+	echo "===> killing ${THREADS}"
+	kill ${THREADS}
+	echo "===> exitting"
+}
+
+worker pluto_wro
+worker pluto_assets
+worker portlets_wro
+worker portlets_assets
+ 
+#wait forever
+trap shutdown SIGHUP SIGINT SIGTERM
+sleep infinity
+

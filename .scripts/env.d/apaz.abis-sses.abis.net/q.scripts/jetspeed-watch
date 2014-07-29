@@ -1,0 +1,13 @@
+while true; do
+	rsync -avPi /build/cbf.git/portal/portlets/src/main/webapp/assets/ /opt/jetspeed/webapps/ABISPortlet/assets/
+	rsync -avPi /build/cbf.git/portal/portlets/src/main/webapp/*.html /opt/jetspeed/webapps/ABISPortlet/
+	rsync -avPi /build/cbf.git/portal/portlets/src/main/webapp/script/ /opt/jetspeed/webapps/ABISPortlet/script/
+	rsync -avPi /build/cbf.git/portal/portlets/src/main/webapp/WEB-INF/view/ /opt/jetspeed/webapps/ABISPortlet/WEB-INF/view/
+	rsync -avPi /build/cbf.git/portal/portlets/src/main/webapp/WEB-INF/tags/ /opt/jetspeed/webapps/ABISPortlet/WEB-INF/tags/
+	rsync -avPi /build/cbf.git/portal/portlets/target/classes/META-INF/resources/ /opt/jetspeed/webapps/ABISPortlet/resources-dev/
+
+	rsync -avPi /build/cbf.git/portal/portal/src/main/webapp/WEB-INF/pages/ /opt/jetspeed/webapps/ABISPortal/WEB-INF/pages/
+
+
+	sleep 0.5
+done
