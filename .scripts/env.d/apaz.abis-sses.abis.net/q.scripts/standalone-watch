@@ -51,6 +51,17 @@ function portlets_wro() {
 	done
 }
 
+function front_assets() {
+	JOB="front"
+
+	while true; do
+		echo "(${JOB}) ---> rsync"
+		rsync -avPi ${BUILD}/portal/front/src/main/webapp/*.jsp ${WEBAPPS}/ROOT/  1> /dev/null
+		rsync -avPi ${BUILD}/portal/front/src/main/webapp/public/ ${WEBAPPS}/ROOT/public/  1> /dev/null
+		sleep 1
+	done
+}
+
 function worker() {
 	$1 &
 	THREADS="${THREADS} $!"
@@ -67,6 +78,7 @@ worker pluto_wro
 worker pluto_assets
 worker portlets_wro
 worker portlets_assets
+worker front_assets
  
 #wait forever
 trap shutdown SIGHUP SIGINT SIGTERM
