@@ -24,6 +24,13 @@ function pluto_assets() {
 	while true; do
 		echo "(${JOB}) ---> rsync"
 		rsync -avPi /build/cbf.git/portal/pluto/src/main/webapp/assets/ ${WEBAPPS}/pluto/assets/ 1> /dev/null
+		rsync -avPi /build/cbf.git/portal/pluto/src/main/webapp/public/ ${WEBAPPS}/pluto/public/ 1> /dev/null
+		rsync -avPi /build/cbf.git/portal/pluto/src/main/webapp/index.jsp ${WEBAPPS}/pluto/index.jsp 1> /dev/null
+		rsync -avPi /build/cbf.git/portal/pluto/src/main/webapp/heartbeat.jsp ${WEBAPPS}/pluto/heartbeat.jsp 1> /dev/null
+		rsync -avPi /build/cbf.git/portal/pluto/src/main/webapp/WEB-INF/themes/ ${WEBAPPS}/pluto/WEB-INF/themes/ 1> /dev/null
+		rsync -avPi /build/cbf.git/portal/pluto/src/main/webapp/WEB-INF/fragments/ ${WEBAPPS}/pluto/WEB-INF/fragments/ 1> /dev/null
+		rsync -avPi /build/cbf.git/portal/pluto/src/main/webapp/WEB-INF/fragments/ ${WEBAPPS}/pluto/WEB-INF/fragments/1> /dev/null
+		rsync -avPi /build/cbf.git/portal/pluto/src/main/webapp/WEB-INF/tags/ ${WEBAPPS}/pluto/WEB-INF/tags/ 1> /dev/null
 		sleep 1
 	done
 }
@@ -48,6 +55,7 @@ function portlets_wro() {
 	while true; do
 		echo "(${JOB}) ---> compiling"
 		mvn wro4j:run -f ${BUILD}/portal/portlets/pom.xml 1> /dev/null
+		rsync -avPi /build/cbf.git/portal/portlets/target/classes/META-INF/resources/portal-portlet/ /home/apaz/.opt/portal/tomcat/webapps/ABISPortlet/WEB-INF/classes/META-INF/resources/portal-portlet/ 1> /dev/null
 	done
 }
 
