@@ -1,6 +1,7 @@
 [color]
        ui = true
 [alias]
+       cm = commit -m
        aa = add --update :/
        br = branch --all
        fixb = checkout -B _fix
@@ -41,3 +42,8 @@
        default = current
 [core]
        editor = vim
+	   excludesfile = ~/.gitglobalignore
+
+[credential]
+		helper = cache
+		timeout = 21600 
