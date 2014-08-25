@@ -16,6 +16,9 @@ nmap <Leader>p "+p
 nmap <Leader>y "+y
 vmap <Leader>y "+y
 
+" Yank full path of current buffer to clipboard
+nmap <Leader>$ :let @+ = expand("%:p")<CR>
+
 " Swap line 
 nmap <Leader>ss "sddk"0p"0:let @0=@s<CR>
 nmap <Leader>siw "sdiw<ESC>h"0p"0:let @0=@s<CR>
