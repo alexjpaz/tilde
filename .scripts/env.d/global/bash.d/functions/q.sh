@@ -1,16 +1,13 @@
 #!/usr/bin/env bash
-SCRIPT_DIR="$HOME/.scripts/env.d/global/q.scripts"
-
-if [ -d $HOME/.scripts/env.d/${PAZENV:-${HOSTNAME}}/q.scripts ]; then
-	SCRIPT_DIR+=" $HOME/.scripts/env.d/${PAZENV:-${HOSTNAME}}/q.scripts"
-fi
+#SCRIPT_DIR="$HOME/.scripts/env.d/global/q.scripts"
+SCRIPT_DIR="$HOME/.scripts/env.d/current/q.scripts"
 
 function q() {
 	SCRIPT=$1
 	shift 1
 
 	if [ -z $SCRIPT ]; then
-		find $SCRIPT_DIR -type f -perm -u=x | sed "s@$SCRIPT_DIR/@@"
+		__q find
 		return;
 	fi
 
@@ -19,11 +16,20 @@ function q() {
 
 __q()
 {
-	cur=${COMP_WORDS[COMP_CWORD]}
-	COMPREPLY=()
-	use=$(find $SCRIPT_DIR -type f -perm -u=x | sed "s@$SCRIPT_DIR/@@");
-	COMPREPLY=( $( compgen -W "$use" -- $cur ) )
+	local opt=$1
+	case $opt in
+		find)      
+			find $SCRIPT_DIR -type f -perm -u=x | sed "s@.*q\.scripts/@@"
+			;;
+		*)
+			cur=${COMP_WORDS[COMP_CWORD]}
+			COMPREPLY=()
+			use=$(__q find);
+			COMPREPLY=( $( compgen -W "$use" -- $cur ) )
+			;;
+	esac
 }
+
 complete -o default -o nospace -F __q  q
 
 # vim:syntax=sh

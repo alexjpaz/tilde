@@ -43,7 +43,6 @@
 [core]
        editor = vim
 	   excludesfile = ~/.gitglobalignore
-
 [credential]
 		helper = cache
 		timeout = 21600 

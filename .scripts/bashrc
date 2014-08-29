@@ -6,7 +6,7 @@ function paz_bashrc_sourceFile() {
 	fi
 
 
-	SCRIPTS=$(find $BASHDIR -iname '*.sh' -perm -u=x | sort)
+	SCRIPTS=$(find $BASHDIR -type f -perm -u=x | sort)
 	for script in $SCRIPTS
 	do
 		if [ -x $script ]; then
