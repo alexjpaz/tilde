@@ -1,0 +1,6 @@
+#!/bin/bash
+mvn clean install -Dmaven.test.skip=true -f /build/cbf.git/common/ngdb/pom.xml
+mvn clean install -Dmaven.test.skip=true -f /build/cbf.git/portal/portlets/pom.xml
+rm -rf /opt/jetspeed/work
+rm -rf /opt/jetspeed/webapps/ABISPortlet
+/opt/jetspeed/bin/catalina.sh run
