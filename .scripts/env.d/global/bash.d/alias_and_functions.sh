@@ -3,6 +3,7 @@ alias ls='ls --color=auto'
 alias cpd="cp -t $HOME/Desktop/"
 alias mci='mvn clean install -Dmaven.test.skip=true'
 alias mcp='mvn clean package -Dmaven.test.skip=true'
+alias mtc="MAVEN_OPTS=-Xmx2048m mvn tomcat:run -Dmaven.tomcat.path='/'"
 alias _vim='vim -u NONE -N'
 
 alias "svn-grep"='grep --exclude-dir=".svn" -r . -e'
