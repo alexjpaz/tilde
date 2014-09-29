@@ -34,6 +34,8 @@
        rh = !$HOME/.scripts/git/reset-hard
        vimp = !sh -c 'vim -p `git diff --name-only`'
        sandbox = !$HOME/.scripts/git/add-sandbox-remote
+	   fall = fetch --all
+       rbi = rebase -i --autosquash
 
 [user]
        name = Alex Paz
