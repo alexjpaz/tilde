@@ -1,5 +1,8 @@
 nmap <A-PageUp> :tabnext<Return>
 nmap <A-PageDown> :tabprev<Return>
+nmap <C-PageUp> :bn<Return>
+nmap <C-PageDown> :bp<Return>
+
 noremap <A-1> 1gt<Return>
 noremap <A-2> 2gt<Return>
 noremap <A-3> 3gt<Return>
