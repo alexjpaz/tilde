@@ -30,3 +30,5 @@ call vundle#end()
 " run :PluginInstall
 
 filetype plugin indent on
+
+let macvim_skip_colorscheme=1

@@ -1,4 +1,3 @@
-
 nmap <A-PageUp> :tabnext<Return>
 nmap <A-PageDown> :tabprev<Return>
 nmap <C-PageUp> :bn<Return>
