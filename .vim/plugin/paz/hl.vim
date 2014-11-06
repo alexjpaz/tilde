@@ -1,3 +1,5 @@
+set hlsearch
+
 hi link paz paz1
 hi paz1 guibg=#ff00ff guifg=#ffffff  term=bold
 hi paz2 guibg=#0000ff  guifg=#aafaff  term=bold
