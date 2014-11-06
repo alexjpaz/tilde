@@ -1,3 +1,8 @@
+
+let macvim_skip_colorscheme=1
+let macvim_skip_cmd_opt_movement = 1
+let macvim_hig_shift_movement = 1
+
 set nocompatible               " be iMproved
 filetype off                   " required!
 
@@ -31,4 +36,4 @@ call vundle#end()
 
 filetype plugin indent on
 
-let macvim_skip_colorscheme=1
+
