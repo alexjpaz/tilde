@@ -16,6 +16,7 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'puppetlabs/puppet-syntax-vim'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/syntastic'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
@@ -24,6 +25,9 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'gcmt/taboo.vim'
 Plugin 'lepture/vim-velocity'
 Plugin 'groenewege/vim-less'
+Plugin 'wookiehangover/jshint.vim'
+Plugin 'maksimr/vim-jsbeautify'
+Plugin 'einars/js-beautify'
 
 "SnipMate
 Plugin 'MarcWeber/vim-addon-mw-utils'
