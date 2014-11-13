@@ -1,0 +1,2 @@
+### Added by the Heroku Toolbelt
+xport PATH="/usr/local/heroku/bin:$PATH"
