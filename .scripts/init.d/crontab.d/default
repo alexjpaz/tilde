@@ -1,0 +1,2 @@
+*/15 * * * * $HOME/.scripts/env.d/current/cron.d/every15Minutes
+0 * * * * $HOME/.scripts/env.d/current/cron.d/hourly
