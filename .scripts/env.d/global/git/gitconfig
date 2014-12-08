@@ -13,6 +13,8 @@
        sts=status -s .
        stu=status --untracked-files=no
        d = diff HEAD
+        wd = diff --word-diff HEAD
+        wdc = diff --word-diff --cached HEAD
        dw = diff --ignore-all-space HEAD
        ds = diff --name-status
        dd = diff --cached HEAD
@@ -39,12 +41,22 @@
 
 [user]
        name = Alex Paz
-       email = alexjpaz@gmail.com 
+       email = alexjpaz@gmail.com
 [push]
        default = current
 [core]
        editor = vim
-	   excludesfile = ~/.gitglobalignore
+	excludesfile = /Users/apaz/.gitglobalignore
 [credential]
 		helper = cache
-		timeout = 21600 
+		timeout = 21600
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[merge]
+	tool = kdiff3
+[mergetool "kdiff3"]
+	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3

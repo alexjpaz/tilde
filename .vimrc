@@ -28,6 +28,7 @@ Plugin 'groenewege/vim-less'
 Plugin 'wookiehangover/jshint.vim'
 Plugin 'maksimr/vim-jsbeautify'
 Plugin 'einars/js-beautify'
+Plugin 'editorconfig/editorconfig-vim'
 
 "SnipMate
 Plugin 'MarcWeber/vim-addon-mw-utils'
