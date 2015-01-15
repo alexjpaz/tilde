@@ -1,62 +1,63 @@
 [color]
-       ui = true
+  ui = true
 [alias]
-       cm = commit -m
-       aa = add --update :/
-       br = branch --all
-       fixb = checkout -B _fix
-       co = checkout
-       c = commit -v -c HEAD
-       cc = !$HOME/.scripts/git/commit-progress-use-current-branch
-       ca = commit --amend
-       st=status
-       sts=status -s .
-       stu=status --untracked-files=no
-       d = diff HEAD
-        wd = diff --word-diff HEAD
-        wdc = diff --word-diff --cached HEAD
-       dw = diff --ignore-all-space HEAD
-       ds = diff --name-status
-       dd = diff --cached HEAD
-       dc = diff --cached
-       dn = diff HEAD --name-status
-       tree = log --decorate --graph --abbrev-commit --oneline
-       forest  = log --decorate --graph --abbrev-commit --oneline --all
-       f = !git forest
-	   t = !git tree
-	   fall = fetch --all
-       sprout = !$HOME/.scripts/git/sprout
-       ap=add -p
-       au=add -u
-       cv = commit --verbose --untracked-files=no
-       l = log --decorate --graph
-       lp = log --decorate --graph --patch --ignore-all-space
-       q =!sh -c 'git f -n 50 && git st'
-       zip = archive --format zip --output
-       rh = !$HOME/.scripts/git/reset-hard
-       vimp = !sh -c 'vim -p `git diff --name-only`'
-       sandbox = !$HOME/.scripts/git/add-sandbox-remote
-	   fall = fetch --all
-       rbi = rebase -i --autosquash
+  cm = commit -m
+  aa = add --update :/
+  br = branch --all
+  fixb = checkout -B _fix
+  co = checkout
+  c = commit -v -c HEAD
+  cc = !$HOME/.scripts/git/commit-progress-use-current-branch
+  ca = commit --amend
+  st=status
+  sts=status -s .
+  stu=status --untracked-files=no
+  d = diff HEAD
+  wd = diff --word-diff HEAD
+  wdc = diff --word-diff --cached HEAD
+  dw = diff --ignore-all-space HEAD
+  ds = diff --name-status
+  dd = diff --cached HEAD
+  dc = diff --cached
+  dn = diff HEAD --name-status
+  tree = log --decorate --graph --abbrev-commit --oneline
+  forest  = log --decorate --graph --abbrev-commit --oneline --all
+  f = !git forest
+  p = pull --rebase
+  t = !git tree
+  fall = fetch --all
+  sprout = !$HOME/.scripts/git/sprout
+  ap=add -p
+  au=add -u
+  cv = commit --verbose --untracked-files=no
+  l = log --decorate --graph
+  lp = log --decorate --graph --patch --ignore-all-space
+  q =!sh -c 'git f -n 50 && git st'
+  zip = archive --format zip --output
+  rh = !$HOME/.scripts/git/reset-hard
+  vimp = !sh -c 'vim -p `git diff --name-only`'
+  sandbox = !$HOME/.scripts/git/add-sandbox-remote
+  fall = fetch --all
+  rbi = rebase -i --autosquash
 
 [user]
-       name = Alex Paz
-       email = alexjpaz@gmail.com
+  name = Alex Paz
+  email = alexjpaz@gmail.com
 [push]
-       default = current
+  default = current
 [core]
-       editor = vim
-	excludesfile = /Users/apaz/.gitglobalignore
+  editor = vim
+  excludesfile = /Users/apaz/.gitglobalignore
 [credential]
-		helper = cache
-		timeout = 21600
+  helper = cache
+  timeout = 21600
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
 [merge]
-	tool = kdiff3
+  tool = kdiff3
 [mergetool "kdiff3"]
-	path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
+  path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
