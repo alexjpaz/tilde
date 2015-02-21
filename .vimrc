@@ -30,6 +30,8 @@ Plugin 'maksimr/vim-jsbeautify'
 Plugin 'einars/js-beautify'
 Plugin 'editorconfig/editorconfig-vim'
 
+Plugin 'fatih/vim-go'
+
 "SnipMate
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
