@@ -6,6 +6,8 @@ git remote add tilde https://github.com/alexjpaz/tilde.git
 git fetch tilde
 git stash
 git reset --hard tilde/master
+git branch --set-upstream-to=tilde/master
+git tag -f "host/$(hostname)"
 
 INIT_DIR="$HOME/.scripts/init.d/"
 SCRIPTS=$(find ${INIT_DIR} -iname '*.sh' -perm -u=x | sort)
