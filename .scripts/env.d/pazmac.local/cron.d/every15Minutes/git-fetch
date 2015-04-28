@@ -1,0 +1,2 @@
+cd ~/workspace/ListHub/reporting-ui
+git fetch --all

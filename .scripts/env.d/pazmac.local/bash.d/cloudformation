@@ -1,0 +1,3 @@
+THREE_WIDE_NETWORK_HOME=/Users/apaz/workspace/ListHub/3yd-network
+export PATH=$PATH:$THREE_WIDE_NETWORK_HOME/cloudformation/launch-scripts/bin
+source $THREE_WIDE_NETWORK_HOME/cloudformation/launch-scripts/bash-completions

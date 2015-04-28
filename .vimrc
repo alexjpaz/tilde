@@ -32,6 +32,8 @@ Plugin 'editorconfig/editorconfig-vim'
 
 Plugin 'fatih/vim-go'
 
+Plugin 'chrisbra/Colorizer'
+
 "SnipMate
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
