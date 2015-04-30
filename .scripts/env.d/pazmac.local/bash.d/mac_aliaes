@@ -2,5 +2,4 @@ alias ff='find .'
 alias ls='ls -G'
 alias mvn='JAVA_HOME=/usr mvn'
 alias fig='docker-compose'
-
-RAINBOW_HOME=/Users/apaz/workspace/ListHub/infrastructure
+alias zd='$(boot2docker shellinit)'
