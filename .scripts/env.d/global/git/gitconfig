@@ -12,14 +12,14 @@
   st=status
   sts=status -s .
   stu=status --untracked-files=no
-  d = diff HEAD
+  d = diff HEAD --relative
   wd = diff --word-diff HEAD
   wdc = diff --word-diff --cached HEAD
   dw = diff --ignore-all-space HEAD
-  ds = diff --name-status
-  dd = diff --cached HEAD
-  dc = diff --cached
-  dn = diff HEAD --name-status
+  ds = diff --name-status --relative
+  dd = diff --cached HEAD --relative
+  dc = diff --cached --relative
+  dn = diff HEAD --name-status --relative
   tree = log --decorate --graph --abbrev-commit --oneline
   forest  = log --decorate --graph --abbrev-commit --oneline --all
   f = !git forest
