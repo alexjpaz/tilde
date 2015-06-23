@@ -1,0 +1,5 @@
+git clone git://github.com/huyng/bashmarks.git ~/.opt/bashmarks
+cd ~/.opt/bashmarks
+make install
+
+echo "source ~/.local/bin/bashmarks.sh from within your ~.bash_profile or ~/.bashrc file"
