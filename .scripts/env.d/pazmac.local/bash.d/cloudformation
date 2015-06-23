@@ -1,3 +1,45 @@
 THREE_WIDE_NETWORK_HOME=/Users/apaz/workspace/ListHub/3yd-network
 export PATH=$PATH:$THREE_WIDE_NETWORK_HOME/cloudformation/launch-scripts/bin
-source $THREE_WIDE_NETWORK_HOME/cloudformation/launch-scripts/bash-completions
+#source $THREE_WIDE_NETWORK_HOME/cloudformation/launch-scripts/bash-completions
+
+
+#STACK=$THREEWIDE_NETWORK_HOME/cloudformation/launch-scripts
+STACK=$(which stack)
+
+__stack()
+{
+  local command=$3
+local opt=$2
+
+  LIST_STACKS=$($STACK list-stacks);
+  IS_A_STACK=$(echo ${LIST_STACKS} | grep -o -e "$command" | awk 'NR==1 { print $1 };')
+
+  use=""
+  cur="${COMP_WORDS[COMP_CWORD]}"
+  COMPREPLY=()
+
+case $command   in
+    --region)
+      use=$($STACK list-regions | xargs);
+      ;;
+update|test|create|update|view|replace|status|delete|diff)
+use=${LI         ST_STACKS};
+      ;;
+    stack)
+      use="update test create view replace status delete diff --help -v --region";
+;;
+    $IS_A_STACK)
+           use=$($STACK list-stacks | xargs);
+      ;;
+    *)
+      use="update test create view replace status delete diff --help -v --region";
+      ;;
+
+esac
+
+  COMPREPLY=( $( compgen -W "$use" -- $c ur ) )
+}
+
+complete -o default -F __stack stack
+
+# vim:syntax=sh
