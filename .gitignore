@@ -1,3 +1,6 @@
+Library/
+Music/
+
 *.swp
 *.swo
 .gitconfig
@@ -99,8 +102,73 @@ workspace/
 Documents/
 Mail/
 Vagrantfile
-bin/
-mkdir
-tmp/
-workbench.xmi
-no changes added to commit (use "git add" and/or "git commit -a")
+# bin/
+# mkdir
+# tmp/
+.CFUserTextEncoding
+.DS_Store
+.Trash/
+.Xauthority
+# 	.android/
+#.atom/
+.aws/
+# 	.bash_profile.backup
+# 	.bash_profile.macports-saved_2014-11-13_at_07:31:05
+# 	.bin/
+.boot2docker/
+.chefdk/
+.cordova/
+.cups/
+.deis/
+.dia-etc/
+.docker/
+# 	.dockercfg
+# 	.editorconfig
+#.git-completion.bash
+.gsutil/
+.heroku/
+.hgignore_global
+.htoprc
+.kdiff3rc
+.kubecfg.vagrant.crt
+.kubecfg.vagrant.key
+.kubernetes.vagrant.ca.crt
+.kubernetes_ns
+.kubernetes_vagrant_auth
+.kubernetes_vagrant_kubeconfig
+# 	.listhub/
+.mono/
+.mysql_history
+.netrc
+.node-gyp/
+# 	.openconnect
+# 	.pia_manager/
+# 	.rnd
+# 	.scripts/env.d/global/bash.d/tmux-git.sh
+# 	.scripts/env.d/pazmac.local/bash.d/thefuck
+# 	.scripts/env.d/pazmac.local/q.scripts/listhub-jetty-debug
+# 	.scripts/init.d/tmuxt-git.sh
+# 	.sdirs
+# 	.vim/.netrwhist
+# 	.vim/after/
+# 	.vim/autoload/
+# 	.vim/bundle/
+# 	.vim/plugin/env
+# 	.vim/plugin/paz/backup.vim
+# 	.vim/plugin/paz/colorschenme.vim
+# 	.vim/plugin/paz/project.vim
+.viminf*.tmp
+.vnc/
+.youtube-upload-credentials.json
+Applications/
+Google Drive/
+ListHub/
+Movies/
+My Games/
+Public/
+Sites/
+VirtualBox/
+WebstormProjects/
+gocode/
+google-cloud-sdk/
+
