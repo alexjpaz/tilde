@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/apaz/Downloads/scriptLogs/jettyLogs/20150602'
+let g:netrw_dirhist_2='/Users/apaz/workspace/alexjpaz/deis.cluster.private/reporting/dist'
+let g:netrw_dirhist_3='/Users/apaz/ListHub/listhub/listhub/build'
+let g:netrw_dirhist_4='/Users/apaz/ListHub/a'
+let g:netrw_dirhist_5='/Users/apaz/ListHub/controllo/jenkins-hooks'
+let g:netrw_dirhist_6='/Users/apaz/ListHub/controllo/node_modules/rdc-bootstrap'
+let g:netrw_dirhist_7='/Users/apaz/ListHub/controllo/build'
+let g:netrw_dirhist_8='/Users/apaz/a'
