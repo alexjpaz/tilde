@@ -4,3 +4,9 @@ alias mvn='JAVA_HOME=/usr mvn'
 alias fig='docker-compose'
 alias zd='$(boot2docker shellinit)'
 alias standup='gshuf <(echo "Alex Bill Brian Jason Andrew Brett" | tr " " "\n") | tail -n 1'
+alias docker-open='__docker_open'
+
+__docker_open () {
+  open http://$(docker-machine ip default):${1:-8003}/
+}
+
