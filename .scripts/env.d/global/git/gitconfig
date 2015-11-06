@@ -7,6 +7,7 @@
   fixb = checkout -B _fix
   co = checkout
   c = commit -v -c HEAD
+  cf = commit --fixup HEAD
   cc = !$HOME/.scripts/git/commit-progress-use-current-branch
   ca = commit --amend
   st=status
