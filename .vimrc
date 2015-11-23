@@ -29,6 +29,7 @@ Plugin 'wookiehangover/jshint.vim'
 Plugin 'maksimr/vim-jsbeautify'
 Plugin 'einars/js-beautify'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'kien/ctrlp.vim'
 
 Plugin 'fatih/vim-go'
 

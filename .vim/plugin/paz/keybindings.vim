@@ -22,7 +22,7 @@ vmap <Leader>y "+y
 " Yank full path of current buffer to clipboard
 nmap <Leader>$ :let @+ = expand("%:p")<CR>
 
-" Swap line 
+" Swap line
 nmap <Leader>ss "sddk"0p"0:let @0=@s<CR>
 nmap <Leader>siw "sdiw<ESC>h"0p"0:let @0=@s<CR>
 
@@ -70,3 +70,15 @@ nnoremap <C-k8> :set nu!<CR>
 
 " replace all word
 nmap <Leader>r "ryiw<ESC>:%s/<C-R>r//gc<left><left><left>
+
+" ctrl p
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.tmp,node_modules/*,bower_components/*
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'node': 'node_modules/.*',
+  \ }
+

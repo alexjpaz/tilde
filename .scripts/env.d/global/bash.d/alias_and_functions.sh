@@ -21,9 +21,18 @@ function _hlgrep() {
 	grep --color -E "${1}|$"
 }
 
-#  apaz 
+#  apaz
 function apaz-prompt-mini() {
 	PS1="\[$(tput setaf 5)\]\\$ \[$(tput sgr0)\]"
 }
 
+function apaz-make-tasks-files() {
+  echo "#!/bin/bash" >> tasks
+  echo "help() {" >> tasks
+  echo "echo hello" >> tasks
+  echo "}" >> tasks
+  echo " " >> tasks
+  echo '$@' >> tasks
 
+  chmod 755 tasks
+}
