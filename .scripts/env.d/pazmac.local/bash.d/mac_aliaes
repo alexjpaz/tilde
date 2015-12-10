@@ -6,7 +6,10 @@ alias zd='$(boot2docker shellinit)'
 alias standup='gshuf <(echo "Alex Bill Brian Jason Andrew Brett" | tr " " "\n") | tail -n 1'
 alias docker-open='__docker_open'
 alias docker-machine-init='docker-machine start default && eval $(docker-machine env default)'
+
 alias docker-kill='docker kill $(docker ps -a -q)'
+
+alias docker-rm='docker rm $(docker ps -a -q)'
 
 __docker_open () {
   open http://$(docker-machine ip default):${1:-8003}/
