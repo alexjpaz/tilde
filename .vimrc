@@ -16,23 +16,26 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'puppetlabs/puppet-syntax-vim'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/syntastic'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
-Plugin 'pangloss/vim-javascript'
 Plugin 'gcmt/taboo.vim'
 Plugin 'lepture/vim-velocity'
 Plugin 'groenewege/vim-less'
-Plugin 'wookiehangover/jshint.vim'
-Plugin 'maksimr/vim-jsbeautify'
-Plugin 'einars/js-beautify'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'kien/ctrlp.vim'
 
-Plugin 'fatih/vim-go'
+" Syntastic
+Plugin 'scrooloose/syntastic'
 
+" Javascript
+Plugin 'mxw/vim-jsx'
+let g:syntastic_javascript_checkers = ['eslint']
+
+Plugin 'pangloss/vim-javascript'
+Plugin 'einars/js-beautify'
+Plugin 'maksimr/vim-jsbeautify'
 Plugin 'chrisbra/Colorizer'
 
 "SnipMate
@@ -40,6 +43,9 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
+
+" Go
+Plugin 'fatih/vim-go'
 
 call vundle#end()
 " run :PluginInstall

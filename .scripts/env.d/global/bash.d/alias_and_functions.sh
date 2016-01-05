@@ -9,7 +9,7 @@ alias http='python -m SimpleHTTPServer 8000'
 
 alias "svn-grep"='grep --exclude-dir=".svn" -r . -e'
 
-alias "docker-remove-untagged"='docker rmi $(docker images | grep "^<none>" | awk "{print $3}")"'
+alias "docker-remove-untagged"='docker rmi $(docker images | grep "^<none>" | awk "{print $3}")'
 
 function _svngrep() {
 	grep --exclude-dir=".svn" -r "$@" .
