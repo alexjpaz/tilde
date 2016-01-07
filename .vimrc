@@ -1,4 +1,3 @@
-
 let macvim_skip_colorscheme=1
 let macvim_skip_cmd_opt_movement = 1
 "let macvim_hig_shift_movement = 1
@@ -9,45 +8,41 @@ filetype off                   " required!
 set ts=4
 set sw=4
 
-set rtp+=~/.vim/bundle/Vundle.vim
+call plug#begin('~/.vim/plugged')
 
-call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
+Plug 'gmarik/Vundle.vim'
 
-Plugin 'puppetlabs/puppet-syntax-vim'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
-Plugin 'gcmt/taboo.vim'
-Plugin 'lepture/vim-velocity'
-Plugin 'groenewege/vim-less'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'kien/ctrlp.vim'
+Plug 'puppetlabs/puppet-syntax-vim'
+Plug 'scrooloose/nerdcommenter'
+Plug 'flazz/vim-colorschemes'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'gcmt/taboo.vim'
+Plug 'lepture/vim-velocity'
+Plug 'groenewege/vim-less'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'kien/ctrlp.vim'
 
 " Syntastic
-Plugin 'scrooloose/syntastic'
+Plug 'scrooloose/syntastic'
 
 " Javascript
-Plugin 'mxw/vim-jsx'
-let g:syntastic_javascript_checkers = ['eslint']
-
-Plugin 'pangloss/vim-javascript'
-Plugin 'einars/js-beautify'
-Plugin 'maksimr/vim-jsbeautify'
-Plugin 'chrisbra/Colorizer'
+Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'
+Plug 'einars/js-beautify'
+Plug 'maksimr/vim-jsbeautify'
+Plug 'chrisbra/Colorizer'
 
 "SnipMate
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+Plug 'honza/vim-snippets'
 
 " Go
-Plugin 'fatih/vim-go'
+Plug 'fatih/vim-go'
 
-call vundle#end()
-" run :PluginInstall
+call plug#end()
 
 filetype plugin indent on
