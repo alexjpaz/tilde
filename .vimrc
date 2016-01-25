@@ -24,6 +24,9 @@ Plug 'groenewege/vim-less'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'kien/ctrlp.vim'
 
+" Yaml
+Plug 'avakhov/vim-yaml'
+
 " Syntastic
 Plug 'scrooloose/syntastic'
 
