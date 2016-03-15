@@ -24,6 +24,10 @@ Plug 'groenewege/vim-less'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'kien/ctrlp.vim'
 
+" Markdown
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+
 " Yaml
 Plug 'avakhov/vim-yaml'
 
@@ -36,6 +40,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'einars/js-beautify'
 Plug 'maksimr/vim-jsbeautify'
 Plug 'chrisbra/Colorizer'
+Plug 'kchmck/vim-coffee-script'
 
 "SnipMate
 Plug 'MarcWeber/vim-addon-mw-utils'
