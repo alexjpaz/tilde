@@ -45,7 +45,7 @@
   name = Alex Paz
   email = alexjpaz@gmail.com
 [push]
-  default = current
+	default = current
 [core]
   editor = vim
   excludesfile = /Users/apaz/.gitglobalignore
@@ -62,3 +62,5 @@
   tool = kdiff3
 [mergetool "kdiff3"]
   path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
+[pull]
+	default = current
