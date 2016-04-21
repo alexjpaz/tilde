@@ -1,6 +1,9 @@
 Library/
 Music/
 
+
+.secret/
+
 *.swp
 *.swo
 .gitconfig

@@ -1,5 +1,5 @@
 [color]
-  ui = true
+	ui = true
 [alias]
   cm = commit -m
   aa = add --update :/
@@ -26,7 +26,7 @@
   f = !git forest
   p = pull --rebase
   t = !git tree
-  fall = fetch --all
+  fall = fetch --all --tags
   sprout = !$HOME/.scripts/git/sprout
   ap=add -p
   au=add -u
@@ -64,3 +64,6 @@
   path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
 [pull]
 	default = current
+[color "status"]
+	branch = green
+	header =
