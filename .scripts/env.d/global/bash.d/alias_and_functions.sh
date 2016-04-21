@@ -6,6 +6,7 @@ alias mcp='mvn clean package -Dmaven.test.skip=true'
 alias mtc="MAVEN_OPTS=-Xmx2048m mvn tomcat:run -Dmaven.tomcat.path='/'"
 alias _vim='vim -u NONE -N'
 alias http='python -m SimpleHTTPServer 8000'
+alias http-debug='.scripts/env.d/common/scripts/reflect.py'
 
 alias "svn-grep"='grep --exclude-dir=".svn" -r . -e'
 
