@@ -13,3 +13,5 @@ map <F11> <Esc>:call ToggleGUICruft()<cr>
 
 " by default, hide gui menus
 set guioptions=i
+
+set guifont=Hack\ 9
