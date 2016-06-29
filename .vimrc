@@ -53,4 +53,6 @@ Plug 'fatih/vim-go'
 
 call plug#end()
 
+runtime macros/matchit.vim
+
 filetype plugin indent on

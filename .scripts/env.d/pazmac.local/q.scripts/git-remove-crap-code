@@ -1,5 +1,4 @@
 #!/bin/bash
 
-
 git ls-files | grep '.js$' | xargs -L1 sed -i '' '/console\.debug/d'
 git status -uno
