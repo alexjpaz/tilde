@@ -40,6 +40,7 @@
   sandbox = !$HOME/.scripts/git/add-sandbox-remote
   fall = fetch --all
   rbi = rebase -i --autosquash
+  unstage = reset HEAD
 
 [user]
   name = Alex Paz

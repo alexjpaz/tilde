@@ -41,6 +41,8 @@ Plug 'einars/js-beautify'
 Plug 'maksimr/vim-jsbeautify'
 Plug 'chrisbra/Colorizer'
 Plug 'kchmck/vim-coffee-script'
+Plug 'juvenn/mustache.vim'
+Plug 'jimmyhchan/dustjs.vim'
 
 "SnipMate
 Plug 'MarcWeber/vim-addon-mw-utils'
