@@ -1,6 +1,7 @@
 [color]
 	ui = true
 [alias]
+  add-non-white-space = !sh -c 'git diff -U0 -w --no-color -- \"$@\" | git apply --cached --ignore-whitespace --unidiff-zero "#"'
   cm = commit -m
   aa = add --update :/
   br = branch --all
@@ -50,6 +51,7 @@
 [core]
   editor = vim
   excludesfile = /Users/apaz/.gitglobalignore
+	pager = less -F -X
 [credential]
   helper = cache
   timeout = 21600

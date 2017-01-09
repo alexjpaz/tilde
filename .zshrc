@@ -1,2 +1,1 @@
-PS1='π '
-source .bashrc
+source ~/.bashrc
