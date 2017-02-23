@@ -1,2 +1,4 @@
-source /Users/apaz/workspace/ListHub/lh_tools/aws/aws-helper-methods
+alias 'move-aws-dev=/Users/apaz/workspace/controllo/Move-AWS-Tools/get-aws-keys.py -p tphub_dev --role User -u apaz'
+alias 'move-aws-qa=/Users/apaz/workspace/controllo/Move-AWS-Tools/get-aws-keys.py -p tphub_qa --role User -u apaz'
+alias 'move-aws-prod=/Users/apaz/workspace/controllo/Move-AWS-Tools/get-aws-keys.py -p tphub_prod --role User -u apaz'
 

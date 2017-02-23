@@ -1,1 +1,2 @@
 #eval "$(docker-machine env default < /dev/null)"
+export DOCKER_HOST=unix:///private/var/run/docker.sock

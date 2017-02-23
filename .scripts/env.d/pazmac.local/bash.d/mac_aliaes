@@ -13,6 +13,7 @@ alias docker-rm='docker rm $(docker ps -a -q)'
 
 alias vnc_rhussmann='open vnc://rhmacbookpro.local'
 alias vnc_mars2='open vnc://mars2.local'
+alias vnc_stephen_emphasis_on_the_n='open vnc://Stevens-MacBook-Pro.local'
 
 __docker_open () {
   open http://$(docker-machine ip default):${1:-8003}/
